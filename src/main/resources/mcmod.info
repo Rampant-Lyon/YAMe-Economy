@@ -1,0 +1,16 @@
+[
+{
+  "modid": "yam.econ",
+  "name": "YAM-Economy",
+  "description": "YAM-Econ development build",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["SirNiloc"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
