@@ -9,7 +9,7 @@ import net.minecraftforge.common.util.INBTSerializable;
 
 public class Econ implements IEcon, INBTSerializable<NBTTagCompound> {
 	
-	private double wallet=-1;
+	private double money=-1;
 
 	public Econ(EntityLivingBase object) {
 		// TODO Auto-generated constructor stub
@@ -27,12 +27,22 @@ public class Econ implements IEcon, INBTSerializable<NBTTagCompound> {
 
 	@Override
 	public void setMoneyDouble(double d) {
-		wallet=d;
+		money=d;
 	}
 
 	@Override
 	public double getMoney() {
-		return wallet;
+		return money;
+	}
+
+	@Override
+	public void cloneABS(Econ abs) {
+		money = abs.getMoney();
+	}
+
+	@Override
+	public Econ getEcon() {
+		return this;
 	}
 
 }

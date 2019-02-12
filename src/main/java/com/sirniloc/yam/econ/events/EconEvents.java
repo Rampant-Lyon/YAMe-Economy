@@ -1,6 +1,5 @@
 package com.sirniloc.yam.econ.events;
 
-import com.sirniloc.yam.BaseYAM;
 import com.sirniloc.yam.econ.BaseEcon;
 import com.sirniloc.yam.econ.capability.CapabilityEcon;
 import com.sirniloc.yam.econ.capability.Econ;
@@ -27,6 +26,6 @@ public class EconEvents {
 	
 	@SubscribeEvent
 	public void onPlayerRespawn(PlayerEvent.Clone event) {		
-		event.getEntityLiving().getCapability(BaseYAM.ABS_CAP, null).cloneABS(event.getOriginal().getCapability(BaseYAM.ABS_CAP, null).getCharacter());		
-	}	
+		event.getEntityLiving().getCapability(BaseEcon.ECON_CAP, null).cloneABS(event.getOriginal().getCapability(BaseEcon.ECON_CAP, null).getEcon());		
+	}
 }
