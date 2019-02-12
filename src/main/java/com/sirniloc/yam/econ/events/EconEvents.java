@@ -28,5 +28,5 @@ public class EconEvents {
 	@SubscribeEvent
 	public void onPlayerRespawn(PlayerEvent.Clone event) {		
 		event.getEntityLiving().getCapability(BaseYAM.ABS_CAP, null).cloneABS(event.getOriginal().getCapability(BaseYAM.ABS_CAP, null).getCharacter());		
-	}
+	}	
 }
